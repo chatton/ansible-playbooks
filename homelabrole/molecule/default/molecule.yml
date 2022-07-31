@@ -5,9 +5,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: geerlingguy/docker-debian11-ansible
-    command: ""
-    privileged: true
+    image: quay.io/centos/centos:stream8
     pre_build_image: true
 provisioner:
   name: ansible
