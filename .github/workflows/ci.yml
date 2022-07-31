@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: homelabrole
       - name: Set up Python 3.8.9
         uses: actions/setup-python@v2
         with:
@@ -20,5 +22,4 @@ jobs:
           python3 -m pip install -r requirements.txt
       - name: Test with molecule
         run: |
-          cd homelabrole
           molecule test
