@@ -1,0 +1,5 @@
+---
+# tasks file for homelabrole
+- name: Molecule Hello World!
+  debug:
+    msg: Hello, World!
